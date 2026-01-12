@@ -1,0 +1,4515 @@
+	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else
+		int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else	int			ret;
+	char		*temp;
+	char		buff[BUFF_SIZE + 1];
+
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
+	{
+		buff[ret] = '\0';
+		temp = buffer;
+		buffer = ft_strjoin(buffer, buff);
+		if (!buffer)
+			return (NULL);
+	}
+	return (buffer);
+}
+
+int		get_next_line(const int fd, char **line)
+{
+	static char	*buffer = "";
+	int			i;
+
+	i = 0;
+	if (line == NULL || fd < 0 || read(fd, *line, 0) < 0)
+		return (-1);
+	buffer = read_fd(buffer, fd);
+	if (buffer[i])
+	{
+		while (buffer[i] != '\n' && buffer[i])
+			++i;
+		*line = ft_strsub(buffer, 0, i);
+		buffer = &buffer[i + 1];
+		return (1);
+	}
+	else
+	XXX
