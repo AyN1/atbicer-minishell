@@ -1,61 +1,63 @@
-# **************************************************************************** #
-#                                    NAME                                      #
-# **************************************************************************** #
+NAME        := minishell
 
-NAME		= minishell
+CC          := cc
+#CFLAGS      := -Wall -Wextra -Werror
+RM          := rm -f
 
-# **************************************************************************** #
-#                                   COMPILER                                   #
-# **************************************************************************** #
+OBJ_DIR     := obj
+LIBFT_DIR   := libft
+LIBFT       := $(LIBFT_DIR)/libft.a
 
-CC			= cc
-# CFLAGS		= -Wall -Wextra -Werror
+SRCS        := minishell.c \
+               command_lexer.c \
+               lexer_utility.c \
+               parser.c \
+			   exec.c
 
-# **************************************************************************** #
-#                                    FILES                                     #
-# **************************************************************************** #
+OBJS        := $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 
-SRCS		= minishell.c \
-			  command_lexer.c \
-			  lexer_utility.c \
-			  parser.c \
-			  exec.c
+INCLUDES    := -I. -I$(LIBFT_DIR)/include
 
-OBJS		= $(SRCS:.c=.o)
+# ===================================================== #
+# OS detection
+# ===================================================== #
+UNAME := $(shell uname)
 
-# **************************************************************************** #
-#                                    LIBFT                                     #
-# **************************************************************************** #
+ifeq ($(UNAME),Darwin)
+	READLINE_INC := -I$(shell brew --prefix readline)/include
+	READLINE_LIB := -L$(shell brew --prefix readline)/lib
+	READLINE_LNK := -lreadline -lhistory -lncurses
+else
+	READLINE_INC :=
+	READLINE_LIB :=
+	READLINE_LNK := -lreadline
+endif
 
-LIBFT_DIR	= libft
-LIBFT		= $(LIBFT_DIR)/libft.a
-INCLUDES	= -I. -I$(LIBFT_DIR)/include
+CFLAGS  += $(READLINE_INC)
+LDFLAGS := $(READLINE_LIB)
+LDLIBS  := $(LIBFT) $(READLINE_LNK)
 
-# readline (adjust if needed for your OS/env)
-READLINE	= -lreadline -lhistory -lncurses
-
-# **************************************************************************** #
-#                                     RULES                                    #
-# **************************************************************************** #
+# ===================================================== #
 
 all: $(NAME)
 
 $(NAME): $(LIBFT) $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) $(LIBFT) $(READLINE) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) $(LDFLAGS) $(LDLIBS) -o $(NAME)
 
-$(LIBFT):
-	$(MAKE) -C $(LIBFT_DIR)
-
-%.o: %.c
+$(OBJ_DIR)/%.o: %.c minishell.h
+	@mkdir -p $(OBJ_DIR)
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
+$(LIBFT):
+	@$(MAKE) -C $(LIBFT_DIR)
+
 clean:
-	rm -f $(OBJS)
-	$(MAKE) -C $(LIBFT_DIR) clean
+	$(RM) $(OBJS)
+	@$(MAKE) -C $(LIBFT_DIR) clean
 
 fclean: clean
-	rm -f $(NAME)
-	$(MAKE) -C $(LIBFT_DIR) fclean
+	$(RM) $(NAME)
+	@$(MAKE) -C $(LIBFT_DIR) fclean
 
 re: fclean all
 
