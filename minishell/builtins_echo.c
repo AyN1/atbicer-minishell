@@ -12,39 +12,19 @@
 
 #include "minishell.h"
 
-static int	is_n_flag(char *str)
-{
-	int	i;
-
-	if (!str || str[0] != '-')
-		return (0);
-	i = 1;
-	if (str[i] != 'n')
-		return (0);
-	while (str[i])
-	{
-		if (str[i] != 'n')
-			return (0);
-		i++;
-	}
-	return (i > 1);
-}
-
 int	builtin_echo(char **argv)
 {
-	int	i;
-	int	newline;
+	int i = 1;
+	int newline = 1;
 
-	newline = 1;
-	i = 1;
-	while (argv[i] && is_n_flag(argv[i]))
+	if (argv[1] && ft_strcmp(argv[1], "-n") == 0)
 	{
 		newline = 0;
-		i++;
+		i = 2;
 	}
 	while (argv[i])
 	{
-		ft_putstr_fd(argv[i], 1);
+		write(1, argv[i], ft_strlen(argv[i]));
 		if (argv[i + 1])
 			write(1, " ", 1);
 		i++;

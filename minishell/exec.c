@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/13 22:13:47 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 22:21:47 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,30 +116,6 @@ static char	*resolve_path(char *cmd, char **envp)
 	}
 	free_split(paths);
 	return (NULL);
-}
-
-/* ---------- builtin: echo ---------- */
-
-static int	builtin_echo(char **argv)
-{
-	int i = 1;
-	int newline = 1;
-
-	if (argv[1] && ft_strcmp(argv[1], "-n") == 0)
-	{
-		newline = 0;
-		i = 2;
-	}
-	while (argv[i])
-	{
-		write(1, argv[i], ft_strlen(argv[i]));
-		if (argv[i + 1])
-			write(1, " ", 1);
-		i++;
-	}
-	if (newline)
-		write(1, "\n", 1);
-	return (0);
 }
 
 static int	is_builtin(char *cmd)

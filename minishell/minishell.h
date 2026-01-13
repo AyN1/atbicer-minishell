@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:31:13 by aschweit          #+#    #+#             */
-/*   Updated: 2026/01/13 22:15:51 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 22:20:15 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,6 @@ int execute_cmds(t_cmd *cmds, char **envp);
 
 /* builtin functions */
 int builtin_pwd(void);
-
+int	builtin_echo(char **argv);
 
 #endif
