@@ -14,7 +14,12 @@ SRCS        := minishell.c \
                parser.c \
 			   exec.c \
 			   builtins_pwd.c \
-			   builtins_echo.c
+			   builtins_echo.c \
+			   builtins_cd.c \
+			   builtins_env.c \
+			   builtins_exit.c \
+			   builtins_export.c \
+			   builtins_unset.c
 
 OBJS        := $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 

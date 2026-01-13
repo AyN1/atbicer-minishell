@@ -12,8 +12,9 @@
 
 #include "minishell.h"
 
-int builtin_pwd(void)
+int builtin_pwd(char **argv)
 {
+	(void)argv;
     char *cwd = getcwd(NULL, 0);
     if (!cwd)
         return (perror("pwd"), 1);

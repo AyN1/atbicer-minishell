@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/13 22:21:47 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 22:50:36 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,7 +142,17 @@ static int	run_builtin(char **argv)
 	if (!ft_strcmp("echo", argv[0]))
 		return (builtin_echo(argv));
 	if (!ft_strcmp("pwd", argv[0]))
-		return (builtin_pwd());
+		return (builtin_pwd(argv));
+	if (!ft_strcmp("cd", argv[0]))
+		return (builtin_cd(argv));
+	if (!ft_strcmp("env0", argv[0])) 
+		return (builtin_env(argv, 0)); // add **envp, change 0 to envp
+	if (!ft_strcmp("exit", argv[0]))
+		return (builtin_exit(argv));
+	if (!ft_strcmp("export", argv[0]))
+		return (builtin_export(argv, 0)); // add **envp, change 0 to envp
+	if (!ft_strcmp("unset", argv[0]))
+		return (builtin_unset(argv));
 	else
 	{
 		write(2, "minishell: ", 11);

@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:31:13 by aschweit          #+#    #+#             */
-/*   Updated: 2026/01/13 22:20:15 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 22:47:04 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,12 @@ char *remove_quotes(char *str);
 int execute_cmds(t_cmd *cmds, char **envp);
 
 /* builtin functions */
-int builtin_pwd(void);
+int builtin_pwd(char **argv);
 int	builtin_echo(char **argv);
+int	builtin_cd(char **argv);
+int	builtin_env(char **argv, char **envp);
+int	builtin_exit(char **argv);
+int	builtin_export(char **argv, char **envp);
+int	builtin_unset(char **argv);
 
 #endif
