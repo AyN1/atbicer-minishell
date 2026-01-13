@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   exec.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
+/*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/13 06:47:40 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 19:36:34 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -188,7 +188,13 @@ static int	run_builtin(char **argv)
 		return (builtin_echo(argv));
 	if (!ft_strcmp("pwd", argv[0]))
 		return (builtin_pwd());
-	return (0);
+	else
+	{
+		write(2, "minishell: ", 11);
+		write(2, argv[0], ft_strlen(argv[0]));
+		write(2, ": not implemented\n", 18);
+		return (1);
+	}
 }
 
 /* ---------- public entry ---------- */
