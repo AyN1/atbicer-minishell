@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:31:13 by aschweit          #+#    #+#             */
-/*   Updated: 2026/01/13 22:47:04 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/14 00:53:47 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ void print_tokens(t_token *tokens);
 void free_tokens(t_token *tokens);
 void free_commands(t_cmd *cmds);
 t_cmd *parse(t_token *tokens);
-char **build_argv(t_token **tokens);
+char    **build_argv(t_token **tokens, t_cmd *cmd);
 t_cmd *new_cmd(void);
 void print_commands(t_cmd *cmds);
 int is_redir(t_token_type type);
@@ -85,6 +85,8 @@ void add_redir(t_redir **head, t_redir *new);
 t_redir *parse_redir(t_token **tokens);
 int check_syntax(t_token *tokens);
 char *remove_quotes(char *str);
+
+/* exec */
 int execute_cmds(t_cmd *cmds, char **envp);
 
 /* builtin functions */
@@ -96,4 +98,29 @@ int	builtin_exit(char **argv);
 int	builtin_export(char **argv, char **envp);
 int	builtin_unset(char **argv);
 
+
+/* norme merge new prototypes */
+int	check_pipe_syntax(t_token *current);
+int	check_redir_syntax(t_token *current);
+void	free_redirs(t_redir *redir);
+void	free_argv(char **argv);
+void	add_word(t_token *curr, char **argv, int *i);
+void	add_cmd(t_cmd **head, t_cmd *new);
+int	count_args(t_token *tokens);
+void	process_char_in_quotes(char *str, int *i, char *res, int *j);
+int	handle_escape_in_dquotes(char *str, int *i, char *res, int *j);
+char	*extract_normal_var(char *str, int start, int end);
+void	add_pipe(t_token **tokens, int *i);
+void	add_redir_out(t_token **tokens, char *input, int *i);
+void	add_redir_in(t_token **tokens, char *input, int *i);
+t_token	*init_token(void);
+char	*copy_word(char *str, int start, int end);
+void	process_word(char *str, int *i, t_quote *state);
+char	*create_special_var(char c);
+t_token	*create_var_token(t_token_type type, char c);
+t_token	*handle_var(char *str, int *i);
+t_cmd	*parse(t_token *tokens);
+void	update_quote_state(char c, t_quote *state, t_token *token);
+int	process_redir(t_token **current, t_cmd *cmd);
+t_redir	*new_redir(int type, char *file);
 #endif

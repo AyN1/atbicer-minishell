@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   builtin_export.c                                   :+:      :+:    :+:   */
+/*   builtins_export.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschweit <aschweit@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -75,11 +75,30 @@ static char	*get_var_value(char *str)
 	return (equals + 1);
 }
 
-int	builtin_export(char **argv, char **envp)
+static int	export_var(char *arg)
 {
-	int		i;
 	char	*name;
 	char	*value;
+
+	if (!is_valid_var_name(arg))
+	{
+		ft_putstr_fd("export: `", 2);
+		ft_putstr_fd(arg, 2);
+		ft_putstr_fd("': not a valid identifier\n", 2);
+		return (1);
+	}
+	name = get_var_name(arg);
+	value = get_var_value(arg);
+	if (value)
+		setenv(name, value, 1);
+	free(name);
+	return (0);
+}
+
+int	builtin_export(char **argv, char **envp)
+{
+	int	i;
+	int	ret;
 
 	if (!argv[1])
 	{
@@ -87,21 +106,12 @@ int	builtin_export(char **argv, char **envp)
 		return (0);
 	}
 	i = 1;
+	ret = 0;
 	while (argv[i])
 	{
-		if (!is_valid_var_name(argv[i]))
-		{
-			ft_putstr_fd("export: `", 2);
-			ft_putstr_fd(argv[i], 2);
-			ft_putstr_fd("': not a valid identifier\n", 2);
-			return (1);
-		}
-		name = get_var_name(argv[i]);
-		value = get_var_value(argv[i]);
-		if (value)
-			setenv(name, value, 1);
-		free(name);
+		if (export_var(argv[i]))
+			ret = 1;
 		i++;
 	}
-	return (0);
+	return (ret);
 }

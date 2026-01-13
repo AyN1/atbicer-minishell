@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   builtin_exit.c                                     :+:      :+:    :+:   */
+/*   builtins_exit.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschweit <aschweit@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -32,28 +32,35 @@ static int	is_numeric(char *str)
 	return (1);
 }
 
-int	builtin_exit(char **argv)
+static void	exit_with_error(char *arg)
+{
+	ft_putstr_fd("exit: ", 2);
+	ft_putstr_fd(arg, 2);
+	ft_putstr_fd(": numeric argument required\n", 2);
+	exit(2);
+}
+
+static void	exit_with_code(char **argv)
 {
 	int	exit_code;
 
+	exit_code = ft_atoi(argv[1]);
+	if (argv[2])
+	{
+		ft_putstr_fd("exit: too many arguments\n", 2);
+		return ;
+	}
+	exit(exit_code % 256);
+}
+
+int	builtin_exit(char **argv)
+{
 	ft_putstr_fd("exit\n", 1);
 	if (!argv[1])
 		exit(0);
 	if (is_numeric(argv[1]))
-	{
-		exit_code = ft_atoi(argv[1]);
-		if (argv[2])
-		{
-			ft_putstr_fd("exit: too many arguments\n", 2);
-			return (1);
-		}
-		exit(exit_code % 256);
-	}
+		exit_with_code(argv);
 	else
-	{
-		ft_putstr_fd("exit: ", 2);
-		ft_putstr_fd(argv[1], 2);
-		ft_putstr_fd(": numeric argument required\n", 2);
-		exit(2);
-	}
+		exit_with_error(argv[1]);
+	return (1);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parsing_utility.c                                     :+:      :+:    :+:*/
+/*   lexer_utility.c                         :+:      :+:    :+:*/
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschweit <aschweit@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -29,6 +29,21 @@ int is_var_char(char c)
             (c >= 'A' && c <= 'Z') || 
             (c >= '0' && c <= '9') || 
             c == '_');
+}
+
+t_token	*init_token(void)
+{
+	t_token	*token;
+
+	token = malloc(sizeof(t_token));
+	if (!token)
+		return (NULL);
+	token->type = type_Word;
+	token->value = NULL;
+	token->in_single_quotes = 0;
+	token->in_double_quotes = 0;
+	token->next = NULL;
+	return (token);
 }
 
 void free_tokens(t_token *tokens)
