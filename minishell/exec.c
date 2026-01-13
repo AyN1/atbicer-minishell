@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/13 19:36:34 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 21:59:04 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,6 @@
 
 /* ---------- small utils ---------- */
 
-
-static int	ft_strcmp(const char *a, const char *b)
-{
-	size_t i = 0;
-	if (!a || !b)
-		return (a != b);
-	while (a[i] && b[i] && a[i] == b[i])
-		i++;
-	return ((unsigned char)a[i] - (unsigned char)b[i]);
-}
 
 static char	*ft_strjoin3(const char *a, const char *b, const char *c)
 {

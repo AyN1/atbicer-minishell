@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atbicer <atbicer@student.42.fr>            +#+  +:+       +#+        */
+/*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 21:21:46 by atbicer           #+#    #+#             */
-/*   Updated: 2025/05/03 15:26:34 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 22:00:54 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,9 @@ int					ft_print_digit(long n, int base, char specifier);
 int					ft_print_char(int c);
 int					ft_print_str(char *str);
 int					ft_print_ptr(unsigned long long ptr);
+
+/* added for minishell, sort it later */
+
+int ft_strcmp(const char *a, const char *b);
 
 #endif
