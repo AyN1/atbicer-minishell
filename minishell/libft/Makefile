@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+         #
+#    By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 04:40:04 by atbicer           #+#    #+#              #
-#    Updated: 2025/05/13 05:27:44 by atbicer          ###   ########.fr        #
+#    Updated: 2026/01/13 01:59:56 by atbicer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,9 +70,9 @@ endef
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@echo "\n$(GREEN)Building libft...$(RESET)"
+	@printf "\n$(GREEN)Building libft...$(RESET)\n"
 	@ar rcs $(NAME) $(OBJS)
-	@echo "$(GREEN)libft compiled$(RESET)"
+	@printf "$(GREEN)libft compiled$(RESET)\n"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(@D)
@@ -80,13 +80,12 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 clean:
-	@echo "$(RED)[LIBFT] Cleaning object files...$(RESET)"
+	@printf "$(RED)[LIBFT] Cleaning object files...$(RESET)\n"
 	@$(RM) $(OBJ_DIR)
 
 fclean: clean
-	@echo "$(RED)[LIBFT] Cleaning everything...$(RESET)"
+	@printf "$(RED)[LIBFT] Cleaning everything...$(RESET)\n"
 	@$(RM) $(NAME)
-
 
 re: fclean all
 
