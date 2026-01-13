@@ -1,0 +1,63 @@
+# **************************************************************************** #
+#                                   Minishell                                 #
+# **************************************************************************** #
+
+NAME        := minishell
+
+CC          := cc
+#CFLAGS      := -Wall -Wextra -Werror
+RM          := rm -f
+
+OBJ_DIR     := obj
+LIBFT_DIR   := libft
+LIBFT       := $(LIBFT_DIR)/libft.a
+
+SRCS        := minishell.c \
+               command_lexer.c \
+               lexer_utility.c \
+               parser.c \
+			   exec.c
+
+OBJS        := $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
+
+# ---- Includes ----
+INCLUDES    := -I. -I$(LIBFT_DIR)/include
+
+# ---- readline (macOS via Homebrew) ----
+BREW_PREFIX := $(shell brew --prefix 2>/dev/null)
+ifeq ($(BREW_PREFIX),)
+	READLINE_INC :=
+	READLINE_LIB :=
+else
+	READLINE_INC := -I$(BREW_PREFIX)/opt/readline/include
+	READLINE_LIB := -L$(BREW_PREFIX)/opt/readline/lib
+endif
+
+INCLUDES    += $(READLINE_INC)
+LDLIBS      := $(LIBFT) $(READLINE_LIB) -lreadline -lhistory -lncurses
+
+# **************************************************************************** #
+
+all: $(NAME)
+
+$(NAME): $(LIBFT) $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) $(LDLIBS) -o $(NAME)
+
+$(OBJ_DIR)/%.o: %.c minishell.h
+	@mkdir -p $(OBJ_DIR)
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
+$(LIBFT):
+	@$(MAKE) -C $(LIBFT_DIR)
+
+clean:
+	$(RM) $(OBJS)
+	@$(MAKE) -C $(LIBFT_DIR) clean
+
+fclean: clean
+	$(RM) $(NAME)
+	@$(MAKE) -C $(LIBFT_DIR) fclean
+
+re: fclean all
+
+.PHONY: all clean fclean re
