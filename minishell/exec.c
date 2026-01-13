@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/13 03:43:55 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 03:44:50 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -227,7 +227,7 @@ int	execute_cmds(t_cmd *cmds, char **envp)
 	if (is_builtin(cmds->argv[0]))
 		return (run_builtin(cmds->argv));
 
-//	pid = fork();
+	pid = fork();
 	if (pid < 0)
 		return (perror("fork"), 1);
 	if (pid == 0)
