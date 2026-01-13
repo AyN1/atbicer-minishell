@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:31:13 by aschweit          #+#    #+#             */
-/*   Updated: 2026/01/13 02:12:09 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 21:47:59 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef enum token_type
     type_Redir_in,     // "<"
     type_Redir_app,      // "<<"
     type_Redir_out,    // ">"
-    type_Redir_deli,     // ">>"
+    type_Redir_append,     // ">>"
     type_Var,   // "$"
     type_Var_exit,
     type_Var_pid
@@ -50,7 +50,7 @@ typedef struct s_quote
 
 typedef struct s_redir
 {
-    int             type;      // REDIR_IN, REDIR_OUT, REDIR_APPEND
+    int             type;
     char            *file;
     struct s_redir  *next;
 }   t_redir;
@@ -79,12 +79,14 @@ t_cmd *parse(t_token *tokens);
 char **build_argv(t_token **tokens);
 t_cmd *new_cmd(void);
 void print_commands(t_cmd *cmds);
-
-//atbicer
+int is_redir(t_token_type type);
+t_redir *new_redir(int type, char *file);
+void add_redir(t_redir **head, t_redir *new);
+t_redir *parse_redir(t_token **tokens);
+int check_syntax(t_token *tokens);
+char *remove_quotes(char *str);
 int execute_cmds(t_cmd *cmds, char **envp);
 
 
 
 #endif
-
-

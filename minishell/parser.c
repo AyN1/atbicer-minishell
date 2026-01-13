@@ -12,14 +12,73 @@
 
 #include "minishell.h"
 
-// Vérifier si la syntaxe est valide
+int is_redir(t_token_type type)
+{
+    return (type == type_Redir_in || type == type_Redir_out ||
+            type == type_Redir_append || type == type_Redir_app);
+}
+
+t_redir *new_redir(int type, char *file)
+{
+    t_redir *redir;
+
+    redir = malloc(sizeof(t_redir));
+    if (!redir)
+        return (NULL);
+    redir->type = type;
+    redir->file = file;
+    redir->next = NULL;
+    return (redir);
+}
+
+void add_redir(t_redir **head, t_redir *new)
+{
+    t_redir *current;
+
+    if (!new)
+        return ;
+    if (!*head)
+    {
+        *head = new;
+        return ;
+    }
+    current = *head;
+    while (current->next)
+        current = current->next;
+    current->next = new;
+}
+
+t_redir *parse_redir(t_token **tokens)
+{
+    t_redir *redir;
+    t_token *current;
+    int type;
+    char *file;
+
+    current = *tokens;
+    if (!current || !is_redir(current->type))
+        return (NULL);
+    
+    type = current->type;
+    
+    current = current->next;
+    if (!current || current->type != type_Word)
+        return (NULL);
+    
+    file = remove_quotes(current->value);
+    
+    redir = new_redir(type, file);
+    
+    *tokens = current->next;
+    
+    return (redir);
+}
 int check_syntax(t_token *tokens)
 {
     t_token *current;
 
     current = tokens;
     
-    // Vérifier qu'on ne commence pas par un pipe
     if (current && current->type == type_Pipe)
     {
         printf("minishell: syntax error near unexpected token `|'\n");
@@ -28,15 +87,33 @@ int check_syntax(t_token *tokens)
     
     while (current)
     {
-        // Deux pipes consécutifs
         if (current->type == type_Pipe && current->next 
             && current->next->type == type_Pipe)
         {
             printf("minishell: syntax error near unexpected token `|'\n");
             return (0);
         }
+
+        if (is_redir(current->type) && !current->next)
+        {
+            printf("minishell: syntax error near unexpected token `newline'\n");
+            return (0);
+        }
         
-        // Redirection sans fichier
+        if (is_redir(current->type) && current->next 
+            && current->next->type == type_Pipe)
+        {
+            printf("minishell: syntax error near unexpected token `|'\n");
+            return (0);
+        }
+        
+        if (is_redir(current->type) && current->next 
+            && is_redir(current->next->type))
+        {
+            printf("minishell: syntax error near unexpected token\n");
+            return (0);
+        }
+        
         if ((current->type == type_Redir_in || current->type == type_Redir_out 
             || current->type == type_Redir_app) && !current->next)
         {
@@ -50,7 +127,6 @@ int check_syntax(t_token *tokens)
     return (1);
 }
 
-// Compter les arguments avant un pipe ou la fin
 int count_args(t_token *tokens)
 {
     int count;
@@ -61,15 +137,21 @@ int count_args(t_token *tokens)
     
     while (current && current->type != type_Pipe)
     {
-        if (current->type == type_Word)
+        if (is_redir(current->type))
+        {
+            current = current->next;
+            if (current)
+                current = current->next;
+            continue;
+        }
+        if (current->type == type_Word || current->type == type_Var ||
+            current->type == type_Var_exit || current->type == type_Var_pid)
             count++;
         current = current->next;
     }
-    
     return (count);
 }
 
-// Enlever les quotes d'une chaîne
 char *remove_quotes(char *str)
 {
     char *result;
@@ -92,13 +174,13 @@ char *remove_quotes(char *str)
     {
         if ((str[i] == '\'' || str[i] == '"') && !quote)
         {
-            quote = str[i];  // Entrer dans les quotes
+            quote = str[i];
             i++;
             continue;
         }
         else if (str[i] == quote)
         {
-            quote = 0;  // Sortir des quotes
+            quote = 0;
             i++;
             continue;
         }
@@ -109,7 +191,6 @@ char *remove_quotes(char *str)
     return (result);
 }
 
-// Construire argv[] depuis les tokens
 char **build_argv(t_token **tokens)
 {
     char **argv;
@@ -127,9 +208,22 @@ char **build_argv(t_token **tokens)
     
     while (current && current->type != type_Pipe)
     {
+        if (is_redir(current->type))
+        {
+            current = current->next;
+            if (current)
+                current = current->next;
+            continue;
+        }
         if (current->type == type_Word)
         {
             argv[i] = remove_quotes(current->value);
+            i++;
+        }
+        else if (current->type == type_Var || current->type == type_Var_exit 
+                 || current->type == type_Var_pid)
+        {
+            argv[i] = strdup(current->value);
             i++;
         }
         current = current->next;
@@ -141,7 +235,6 @@ char **build_argv(t_token **tokens)
     return (argv);
 }
 
-// Créer une nouvelle commande
 t_cmd *new_cmd(void)
 {
     t_cmd *cmd;
@@ -155,7 +248,6 @@ t_cmd *new_cmd(void)
     return (cmd);
 }
 
-// Parser : tokens → t_cmd
 t_cmd *parse(t_token *tokens)
 {
     t_cmd *head;
@@ -170,13 +262,10 @@ t_cmd *parse(t_token *tokens)
     
     while (tok)
     {
-        // Créer une nouvelle commande
         t_cmd *cmd = new_cmd();
         
-        // Construire argv
         cmd->argv = build_argv(&tok);
         
-        // Ajouter à la liste
         if (!head)
             head = cmd;
         else
@@ -187,7 +276,6 @@ t_cmd *parse(t_token *tokens)
             current->next = cmd;
         }
         
-        // Sauter le pipe si présent
         if (tok && tok->type == type_Pipe)
             tok = tok->next;
     }
@@ -198,6 +286,7 @@ t_cmd *parse(t_token *tokens)
 void print_commands(t_cmd *cmds)
 {
     t_cmd *current;
+    t_redir *redir;
     int i;
     int cmd_num;
 
@@ -219,7 +308,26 @@ void print_commands(t_cmd *cmds)
             i++;
         }
         printf("]\n");
-        
+
+        if (current->redirs)
+        {
+            printf("  redirections:\n");
+            redir = current->redirs;
+            while (redir)
+            {
+                printf("    ");
+                if (redir->type == type_Redir_in)
+                    printf("< ");
+                else if (redir->type == type_Redir_out)
+                    printf("> ");
+                else if (redir->type == type_Redir_append)
+                    printf(">> ");
+                else if (redir->type == type_Redir_app)
+                    printf("<< ");
+                printf("\"%s\"\n", redir->file);
+                redir = redir->next;
+            }
+        }
         current = current->next;
     }
     printf("================\n");
@@ -228,13 +336,14 @@ void print_commands(t_cmd *cmds)
 void free_commands(t_cmd *cmds)
 {
     t_cmd *tmp;
+    t_redir *redir;
+    t_redir *tmp_redir;
     int i;
 
     while (cmds)
     {
         tmp = cmds->next;
         
-        // Libérer argv
         if (cmds->argv)
         {
             i = 0;
@@ -246,7 +355,15 @@ void free_commands(t_cmd *cmds)
             free(cmds->argv);
         }
         
-        // TODO: Libérer redirections
+        redir = cmds->redirs;
+        while (redir)
+        {
+            tmp_redir = redir->next;
+            if (redir->file)
+                free(redir->file);
+            free(redir);
+            redir = tmp_redir;
+        }
         
         free(cmds);
         cmds = tmp;

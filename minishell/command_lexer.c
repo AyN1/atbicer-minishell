@@ -253,7 +253,7 @@ t_token *tokenize_with_quotes(char *input)
         }
         else if (input[i] == '>' && input[i + 1] == '>')
         {
-            new = new_token(type_Redir_app, NULL);
+            new = new_token(type_Redir_append, NULL);
             add_token(&tokens, new);
             i += 2;
         }    
@@ -262,6 +262,12 @@ t_token *tokenize_with_quotes(char *input)
             new = new_token(type_Redir_out, NULL);
             add_token(&tokens, new);
             i++;
+        }
+        else if (input[i] == '<' && input[i + 1] == '<')
+        {
+            new = new_token(type_Redir_app, NULL);
+            add_token(&tokens, new);
+            i += 2;
         }
         else if (input[i] == '<')
         {
