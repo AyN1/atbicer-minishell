@@ -96,7 +96,7 @@ char *extract_var_name(char *str, int *i)
     start = *i;
     if(str[*i] == '?')
     {
-        *i++;
+        (*i)++;
         var_name = malloc(2);
         if(!var_name)
             return(NULL);
@@ -107,7 +107,7 @@ char *extract_var_name(char *str, int *i)
 
     if(str[*i] == '$')
     {
-        *i++;
+        (*i)++;
         var_name = malloc(2);
         if(!var_name)
             return(NULL);
