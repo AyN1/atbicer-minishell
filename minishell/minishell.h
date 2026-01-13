@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:31:13 by aschweit          #+#    #+#             */
-/*   Updated: 2026/01/12 23:05:48 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 02:12:09 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <termios.h>
-/*#include "libft.h"*/
+#include "libft.h"
 
 typedef enum token_type
 {

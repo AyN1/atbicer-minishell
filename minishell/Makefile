@@ -29,7 +29,7 @@ OBJS		= $(SRCS:.c=.o)
 
 LIBFT_DIR	= libft
 LIBFT		= $(LIBFT_DIR)/libft.a
-INCLUDES	= -I. -I$(LIBFT_DIR)
+INCLUDES	= -I. -I$(LIBFT_DIR)/include
 
 # readline (adjust if needed for your OS/env)
 READLINE	= -lreadline -lhistory -lncurses

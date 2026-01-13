@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/12 23:16:08 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 02:15:19 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,6 @@
 
 /* ---------- small utils ---------- */
 
-static size_t	ft_strlen(const char *s)
-{
-	size_t i = 0;
-	while (s && s[i])
-		i++;
-	return (i);
-}
 
 static int	ft_strcmp(const char *a, const char *b)
 {
