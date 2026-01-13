@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   exec.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
+/*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/13 03:44:50 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 06:47:40 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,20 +25,6 @@ static int	ft_strcmp(const char *a, const char *b)
 	while (a[i] && b[i] && a[i] == b[i])
 		i++;
 	return ((unsigned char)a[i] - (unsigned char)b[i]);
-}
-
-static int	ft_starts_with(const char *s, const char *prefix)
-{
-	size_t i = 0;
-	if (!s || !prefix)
-		return (0);
-	while (prefix[i])
-	{
-		if (s[i] != prefix[i])
-			return (0);
-		i++;
-	}
-	return (1);
 }
 
 static char	*ft_strjoin3(const char *a, const char *b, const char *c)

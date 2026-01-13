@@ -65,6 +65,8 @@ int main(int argc, char **argv, char **envp) // added argument instead of void.
     int end = 0;
     t_cmd *cmds; 
    
+    (void)argc;
+    (void)argv;
 	setup_terminal(); 
     signal(SIGINT, handle_sigint);
 	signal(SIGQUIT, SIG_IGN); 
