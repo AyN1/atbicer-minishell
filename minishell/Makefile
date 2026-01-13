@@ -12,7 +12,8 @@ SRCS        := minishell.c \
                command_lexer.c \
                lexer_utility.c \
                parser.c \
-			   exec.c
+			   exec.c \
+			   builtins_pwd.c
 
 OBJS        := $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 

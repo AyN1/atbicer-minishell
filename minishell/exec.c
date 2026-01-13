@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 23:02:40 by atbicer           #+#    #+#             */
-/*   Updated: 2026/01/13 21:59:04 by atbicer          ###   ########.fr       */
+/*   Updated: 2026/01/13 22:13:47 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,17 +140,6 @@ static int	builtin_echo(char **argv)
 	if (newline)
 		write(1, "\n", 1);
 	return (0);
-}
-
-static int builtin_pwd(void)
-{
-    char *cwd = getcwd(NULL, 0);
-    if (!cwd)
-        return (perror("pwd"), 1);
-    write(1, cwd, ft_strlen(cwd));
-    write(1, "\n", 1);
-    free(cwd);
-    return (0);
 }
 
 static int	is_builtin(char *cmd)

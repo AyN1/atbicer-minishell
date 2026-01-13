@@ -12,20 +12,13 @@
 
 #include "minishell.h"
 
-int	builtin_pwd(char **argv)
+int builtin_pwd(void)
 {
-	char	cwd[4096];
-
-	(void)argv;
-	if (getcwd(cwd, sizeof(cwd)))
-	{
-		ft_putstr_fd(cwd, 1);
-		write(1, "\n", 1);
-		return (0);
-	}
-	else
-	{
-		perror("pwd");
-		return (1);
-	}
+    char *cwd = getcwd(NULL, 0);
+    if (!cwd)
+        return (perror("pwd"), 1);
+    write(1, cwd, ft_strlen(cwd));
+    write(1, "\n", 1);
+    free(cwd);
+    return (0);
 }
