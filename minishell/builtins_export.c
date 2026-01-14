@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   builtins_export.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aschweit <aschweit@student.s19.be>         +#+  +:+       +#+        */
+/*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/13 by aschweit              #+#    #+#                */
-/*   Updated: 2026/01/13 by aschweit                 ###   ########.fr       */
+/*   Created: 2026/01/14 01:09:58 by atbicer           #+#    #+#             */
+/*   Updated: 2026/01/14 01:12:05 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,8 +97,8 @@ static int	export_var(char *arg)
 
 int	builtin_export(char **argv, char **envp)
 {
-	int	i;
-	int	ret;
+	int		i;
+	int		ret;
 
 	if (!argv[1])
 	{

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   builtin_echo.c                                     :+:      :+:    :+:   */
+/*   builtins_echo.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aschweit <aschweit@student.s19.be>         +#+  +:+       +#+        */
+/*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/13 by aschweit              #+#    #+#                */
-/*   Updated: 2026/01/13 by aschweit                 ###   ########.fr       */
+/*   Created: 2026/01/14 01:07:10 by atbicer           #+#    #+#             */
+/*   Updated: 2026/01/14 01:09:08 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 int	builtin_echo(char **argv)
 {
-	int i = 1;
-	int newline = 1;
+	int	i;
+	int	newline;
 
+	i = 1;
+	newline = 1;
 	if (argv[1] && ft_strcmp(argv[1], "-n") == 0)
 	{
 		newline = 0;
