@@ -73,4 +73,3 @@ void	add_redir_in(t_token **tokens, char *input, int *i)
 		(*i)++;
 	}
 }
-
